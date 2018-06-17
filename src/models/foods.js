@@ -1,13 +1,13 @@
 'use strict';
 
-const storage = require('../lib/storage/data-store.js');
+const storage = require('../src/lib/storage/data-store.js');
 const uuid = require('uuid/v1');
 
-class Food{
+class Foods{
 
     constructor(config) {
 
-        this.is = uuid();
+        this.id = uuid();
         this.createdOn = new Date();
         this.title = config && config.title || '';
         this.content = config && config.content || '';
@@ -31,4 +31,4 @@ class Food{
 
 }
 
-module.exports = Food;
+module.exports = Foods;

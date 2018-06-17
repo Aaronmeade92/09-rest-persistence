@@ -1,23 +1,30 @@
 {
-  "name": "09-rest-persistence",
+  "name": "11-express",
   "version": "1.0.0",
-  "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 09: Vanilla REST API w/ Persistence",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) 11: Express and Babel\r ======",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --coverage",
+    "lint": "eslint **/*.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aaronmeade92/09-rest-persistence.git"
+    "url": "git+https://github.com/Aaronmeade92/11-express.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aaronmeade92/09-rest-persistence/issues"
+    "url": "https://github.com/Aaronmeade92/11-express/issues"
   },
-  "homepage": "https://github.com/Aaronmeade92/09-rest-persistence#readme",
+  "homepage": "https://github.com/Aaronmeade92/11-express#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "jest": "^23.1.0"
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^8.2.3",
+    "babel-register": "^6.26.0",
+    "express": "^4.16.3",
+    "jest": "^23.1.0",
+    "superagent": "^3.8.3"
   }
 }
