@@ -3,7 +3,7 @@
 import express from 'express';
 const router = express.Router();
 
-import Foods from '../../models/foods.js';
+import Foods from './src/models/foods.js';
 
 import fs from 'fs';
 

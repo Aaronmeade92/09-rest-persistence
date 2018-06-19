@@ -1,6 +1,6 @@
 'use strict';
 
-const storage = require('../src/lib/storage/data-store.js');
+const storage = require('../lib/storage/data-store.js');
 const uuid = require('uuid/v1');
 
 class Foods{

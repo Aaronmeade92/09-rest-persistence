@@ -1,14 +1,17 @@
 'use strict';
 
-let http = require('http');
+import express from 'express';
+import router from '../api.js';
+// import api from '../src/lib/api.js';
 
+let app = express();
 
-const router = require('./lib/router.js');
-const api = require('../api.js');
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+app.use(router);
 
 let isRunning = false;
-
-const app = http.createServer(router.route);
 
 module.exports = {
   start: (port) => {
